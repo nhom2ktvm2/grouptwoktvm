@@ -5,132 +5,81 @@
   <title>Giới thiệu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+  <style>
     body {
-        font-family: "Segoe UI", Tahoma, sans-serif;
-        margin: 0;
-        background-color: #f4f6f9;
-        color: #333;
-        line-height: 1.6;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 20px;
+      background-color: #f2f2f2;
     }
 
-    /* ===== Thanh menu ===== */
     nav {
-        background: #0d47a1;
-        padding: 0;
-        text-align: center;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 10px;
     }
 
     nav a {
-        display: inline-block;
-        padding: 14px 18px;
-        color: white;
-        text-decoration: none;
-        font-weight: 600;
-        border-bottom: 3px solid transparent;
-        transition: 0.3s;
+      color: #1a2a8f;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 12px;
     }
 
     nav a:hover {
-        background: rgba(255,255,255,0.1);
-        border-bottom: 3px solid #ffeb3b;
+      text-decoration: underline;
     }
 
-    /* 👉 Trang đang mở sẽ có vạch xanh */
-    nav a.active {
-        border-bottom: 3px solid #00e5ff;
-    }
-
-    /* ===== Khung nội dung ===== */
     .container {
-        width: 92%;
-        max-width: 1050px;
-        margin: 30px auto;
+      max-width: 1000px;
+      margin: auto;
     }
 
     .box {
-        background: white;
-        padding: 25px;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        margin-bottom: 25px;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
     }
 
-    /* ===== Tiêu đề ===== */
     h1 {
-        color: #0d47a1;
-        margin-bottom: 10px;
+      color: #0b2c8f;
+      font-size: 36px;
+      margin-bottom: 10px;
     }
 
     h2 {
-        color: #b71c1c;
-        margin-top: 25px;
+      color: #8b0000;
+      margin-top: 0;
     }
 
-    h3 {
-        color: #333;
-        margin-top: 20px;
+    p, li {
+      font-size: 18px;
+      line-height: 1.6;
     }
 
-    /* ===== Danh sách ===== */
-    ul {
-        padding-left: 20px;
+    /* Thẻ thành viên */
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
     }
 
-    li {
-        margin-bottom: 8px;
+    .member {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 10px;
+      border-left: 5px solid #1a2a8f;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
     }
 
-    /* ===== Ghi chú nổi bật ===== */
-    .note {
-        background: #fff8e1;
-        border-left: 6px solid #ffb300;
-        padding: 15px;
-        border-radius: 8px;
+    .member b {
+      color: #0b2c8f;
+      font-size: 18px;
     }
 
-    /* ===== Mục lục ===== */
-    .toc a {
-        text-decoration: none;
-        color: #0d47a1;
-    }
-
-    .toc a:hover {
-        text-decoration: underline;
-        color: #b71c1c;
-    }
-
-    /* ===== Ô thành viên (GIỮ KHÔNG BỊ MẤT) ===== */
-    .members {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 15px;
-        margin-top: 15px;
-    }
-
-    .member-card {
-        background: #f9fafc;
-        border-radius: 10px;
-        padding: 15px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-        border-left: 5px solid #0d47a1;
-    }
-
-    .member-card b {
-        color: #0d47a1;
-        font-size: 16px;
-    }
-
-    /* ===== Footer ===== */
-    footer {
-        text-align: center;
-        padding: 15px;
-        font-size: 14px;
-        color: #666;
-        margin-top: 30px;
-    }
-</style>
+  </style>
 </head>
 
 <body>
@@ -188,7 +137,7 @@
       </div>
 
       <div class="member">
-        <b>Tiêu Mai Vy</b><br>
+        <b>Tiêu May Vy</b><br>
         MSSV: B2306846<br>
         Vai trò: Thành viên
       </div>
